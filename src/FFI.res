@@ -322,7 +322,7 @@ module Read = {
   external i64: (pointer, ~byteOffset: int=?) => bigint = "i64"
 
   @module("bun:ffi") @scope("read")
-  external ptr: (pointer, ~byteOffset: int=?) => int = "ptr"
+  external ptr: (pointer, ~byteOffset: int=?) => pointer = "ptr"
 
   @module("bun:ffi") @scope("read")
   external intptr: (pointer, ~byteOffset: int=?) => int = "intptr"
