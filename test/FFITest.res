@@ -2,7 +2,7 @@ open RescriptBun
 open Test
 open FFI
 
-let libPath = Globals.import.meta.dir ++ "/ffi_testlib.so"
+let libPath = Globals.import.meta.dir ++ "/ffi_testlib." ++ suffix
 
 describe("FFI", () => {
   test("suffix is a non-empty string", () => {
